@@ -1,0 +1,60 @@
+
+.error {
+    color: red;
+    margin:5px;
+}
+
+.input-error {
+    border: 1px solid red;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.input {
+    height: 40px;
+    width:300px;
+    font-size: 16px;
+    font-size: max(16px, 1em);
+    font-family: inherit;
+    font-weight: 500;
+    padding: 0.25em 0.5em;
+    background-color: rgb(220, 215, 215);
+    border: 2px solid #8b8a8b;
+    border-radius: 4px;
+  }
+
+.inpur:focus {
+    box-shadow: 0 0 0 3px hsla(245,100%, calc(42% + 40%), 0.8);
+}
+
+.btn{
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  font-weight: 700;
+  transition: box-shadow 0.15s ease,transform 0.15s ease;
+  will-change: box-shadow,transform;
+  background: #FCFCFD;
+  box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+  height: 48px;
+  padding: 0 32px;
+  font-size: 18px;
+  border-radius: 6px;
+  color: #36395a;
+  transition: box-shadow 0.15s ease,transform 0.15s ease;
+  margin:10px;
+}
+.btn:hover {
+      box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+      transform: translateY(-2px);
+  }
+
+.btn:active{
+      box-shadow: inset 0px 3px 7px #d6d6e7;
+      transform: translateY(2px);
+}
